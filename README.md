@@ -11,14 +11,14 @@ Confused why the returned value is an integer but your answer is an array?
 Note that the input array is passed in by **reference**, which means a modification to the input array will be known to the caller as well.
 
 Internally you can think of this:
-```// nums is passed in by reference. (i.e., without making a copy)
+``// nums is passed in by reference. (i.e., without making a copy)
 int len = removeDuplicates(nums);
 
 // any modification to nums in your function would be known by the caller.
 // using the length returned by your function, it prints the first len elements.
 for (int i = 0; i < len; i++) {
     print(nums[i]);
-}```
+}``
 
 ##### Example 1:
 ```
@@ -36,7 +36,7 @@ Explanation: Your function should return length = 5, with the first five element
 
 ##### Constraints:
 
-- ``0 <= nums.length <= 3 * 104``
+- `0 <= nums.length <= 3 * 104`
 - `-104 <= nums[i] <= 104`
 - `nums` is sorted in ascending order.
 
